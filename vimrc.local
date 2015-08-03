@@ -31,3 +31,12 @@ function! s:RemoveConflictingAlignMaps()
 endfunction
 command! -nargs=0 RemoveConflictingAlignMaps call s:RemoveConflictingAlignMaps()
 silent! autocmd VimEnter * RemoveConflictingAlignMaps
+
+# Enable airline
+let g:airline#extensions#tabline#enabled = 1
+
+# Persistent undo
+set undodir ~/.vim/undodir
+set undofile
+set undolevels = 1000 " maximum number of changes that can be undone
+set undoreload = 10000 " maximum number lines to save for undo on a buffer reload

@@ -1,0 +1,2 @@
+Plugin 'bling/vim-airline'
+Plugin 'fatih/vim-go'
